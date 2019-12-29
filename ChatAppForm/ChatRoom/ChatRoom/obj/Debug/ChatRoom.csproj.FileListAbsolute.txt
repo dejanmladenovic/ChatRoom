@@ -250,3 +250,31 @@ C:\fax\ChatRoom\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csproj
 C:\fax\ChatRoom\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csproj.CopyComplete
 C:\fax\ChatRoom\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.dll
 C:\fax\ChatRoom\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.pdb
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\ChatRoom.dll.config
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\ChatRoom.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\ChatRoom.pdb
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Newtonsoft.Json.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Pipelines.Sockets.Unofficial.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\StackExchange.Redis.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Buffers.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.IO.Pipelines.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Memory.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Numerics.Vectors.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Channels.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Newtonsoft.Json.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Pipelines.Sockets.Unofficial.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\StackExchange.Redis.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Buffers.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.IO.Pipelines.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Memory.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Numerics.Vectors.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Channels.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csprojAssemblyReference.cache
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csproj.CopyComplete
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.dll
+E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.pdb

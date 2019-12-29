@@ -103,10 +103,7 @@ namespace ChatAppForm
             }
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            chatCore.Disconected();
-        }
+
 
         public void addInMuted(string userName)
         {
@@ -127,6 +124,11 @@ namespace ChatAppForm
                 chatCore.SendMessage(theMessage);
                 messageBox.Text = "";
             }
+        }
+
+        private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            chatCore.Disconected();
         }
     }
 }
