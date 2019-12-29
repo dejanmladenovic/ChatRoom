@@ -15,25 +15,31 @@ namespace ChatAppForm
     {
         ChatAPI coreChat;
         Form1 mainForm;
+        System.Drawing.Color myColor;
         public Login(ChatAPI api)
         {
             coreChat = api;
+            myColor = System.Drawing.Color.SkyBlue;
             InitializeComponent();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if(tbUserName.Text == "")
+            {
+                MessageBox.Show("Morate uneti korisničko ime.");
+                return;
+            }
             if (coreChat.addUserNameInList(tbUserName.Text))
             {
-                //this.DialogResult = System.Windows.Forms.DialogResult.No;
-                //mainForm.AddOnline(tbUserName.Text);
                 this.Hide();
+                mainForm.myMessagesColor = new ChatRoom.Color(255, myColor.R, myColor.G, myColor.B);
                 mainForm.ShowDialog();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Username je zauzet.Pokusajte ponovo.");
+                MessageBox.Show("Korisničko ime je zauzeto. Pokušajte ponovo.");
             }
         }
 
@@ -42,6 +48,15 @@ namespace ChatAppForm
             mainForm = new Form1();
             mainForm.BindChatAPI(coreChat);
             coreChat.ChatFormWindow = mainForm;           
+        }
+
+        private void btnColorPicker_Click(object sender, EventArgs e)
+        {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                btnColorPicker.BackColor = colorDialog.Color;
+                myColor = colorDialog.Color;
+            }
         }
     }
 }
