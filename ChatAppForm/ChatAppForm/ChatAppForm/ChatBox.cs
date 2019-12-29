@@ -19,8 +19,6 @@ namespace ChatAppForm
             nextElementTop = 5;
             InitializeComponent();
             this.Height = 0;
-            //messagesPanel.Width = this.Width;
-            //messagesPanel.Top = 0;
         }
 
         public void addChatMessage(ChatRoom.Message message, int msgType) 
@@ -39,6 +37,26 @@ namespace ChatAppForm
             nextElementTop += bubble.Height + 10;
             this.Height = nextElementTop;
             this.Controls.Add(bubble);
+        }
+
+        public void addChatNotification(string message)
+        {
+            Label notification = new Label()
+            {
+                AutoSize = false,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.None,
+                Left = 10,
+                Width = this.Width - 10
+            };
+            notification.Text = message;
+            notification.Font = new Font(notification.Font.FontFamily, 10, FontStyle.Bold);
+            notification.ForeColor = System.Drawing.Color.DarkGray;
+            notification.Top = nextElementTop;
+
+            nextElementTop += notification.Height + 10;
+            this.Height = nextElementTop;
+            this.Controls.Add(notification);
         }
     }
 }

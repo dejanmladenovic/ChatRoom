@@ -123,7 +123,7 @@ namespace ChatRoom
         public byte blue;
         public byte green;
 
-        public Color( byte r, byte g, byte b, byte a)
+        public Color(byte a, byte r, byte g, byte b)
         {
             alpha = a;
             red = r;

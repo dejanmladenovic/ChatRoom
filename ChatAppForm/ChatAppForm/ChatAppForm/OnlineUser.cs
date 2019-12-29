@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Reflection;
 
 namespace ChatAppForm
 {
     public partial class OnlineUser : UserControl
     {
-        
+        bool userMuted;
         Form1 mainForm;
         public OnlineUser(Form1 forma)
         {
             InitializeComponent();
             mainForm = forma;
+            userMuted = false;
         }
 
         public void SetUserName(string user)
@@ -25,15 +28,21 @@ namespace ChatAppForm
             this.lblUserName.Text = user;
         }
 
-        private void chxBoxMuted_CheckedChanged(object sender, EventArgs e)
+        
+
+        private void soundIcon_Click(object sender, EventArgs e)
         {
-            if(chxBoxMuted.Checked == true)
+            if (userMuted)
             {
-                mainForm.addInMuted(this.lblUserName.Text);
+                mainForm.DeleteFromListMuted(this.lblUserName.Text);
+                userMuted = false;
+                soundIcon.Image = ChatAppForm.Properties.Resources.sound;
             }
             else
             {
-                mainForm.DeleteFromListMuted(this.lblUserName.Text);
+                mainForm.addInMuted(this.lblUserName.Text);
+                userMuted = true;
+                soundIcon.Image = ChatAppForm.Properties.Resources.mute;
             }
         }
     }

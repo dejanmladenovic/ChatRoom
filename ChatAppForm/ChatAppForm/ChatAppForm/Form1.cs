@@ -19,6 +19,7 @@ namespace ChatAppForm
     {
         ChatAPI chatCore;
         ChatRoom.Message msg;
+        public ChatRoom.Color myMessagesColor;
 
         public Form1()
         {
@@ -44,18 +45,29 @@ namespace ChatAppForm
 
         private void SetText(ChatRoom.Message msg)
         {
-           // this.onlineBox.AddOnlineUser(msg.UserName);
-            ChatRoom.Message m = new ChatRoom.Message(msg.UserName, msg.MessageColor, msg.MessageValue, "");
 
-            if (chatCore.UserName.Equals(msg.UserName))
-                chatBox.addChatMessage(m, 0);
-            else
-                chatBox.addChatMessage(m, 1);
+            switch (msg.Type)
+            {
+                case "user_message":
+                    if (chatCore.UserName.Equals(msg.UserName))
+                        chatBox.addChatMessage(msg, 0);
+                    else
+                        chatBox.addChatMessage(msg, 1);
+                    break;
+                case "user_join":
+                    if (chatCore.UserName.Equals(msg.UserName))
+                        chatBox.addChatNotification("Uspešno ste se prikljucili ćaskanju kao " + msg.UserName);
+                    else
+                        chatBox.addChatNotification("Korisnik " + msg.UserName + " se uspešno pridružio ćaskanju.");
+                    break;
+            }
+
+            
         }
+
 
         public void DisplayMessage(ChatRoom.Message message)
         {
-            //MessageBox.Show(message.MessageValue);
             this.msg = message;
             Thread th = new Thread(new ThreadStart(this.ThreadProcSafe));
             th.Start();
@@ -76,9 +88,8 @@ namespace ChatAppForm
 
         private void btnSendMessage_Click(object sender, EventArgs e)
         {
-            ChatRoom.Message theMessage = new ChatRoom.Message(chatCore.UserName, new ChatRoom.Color(255, 50, 50, 0), messageBox.Text, "");
+            ChatRoom.Message theMessage = new ChatRoom.Message(chatCore.UserName, myMessagesColor, messageBox.Text, "user_message");
             chatCore.SendMessage(theMessage);
-
             messageBox.Text = "Unesite poruku...";
         }
 
@@ -100,10 +111,22 @@ namespace ChatAppForm
         public void addInMuted(string userName)
         {
             chatCore.addInMutedList(userName);
+            chatBox.addChatNotification("Blokirali ste poruke korisnika " + userName + ".");
         }
         public void DeleteFromListMuted(string userName)
         {
             chatCore.DeleteFromListMuted(userName);
+            chatBox.addChatNotification("Odobrili ste poruke korisnika " + userName + ".");
+        }
+
+        private void messageBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                ChatRoom.Message theMessage = new ChatRoom.Message(chatCore.UserName, myMessagesColor, messageBox.Text, "user_message");
+                chatCore.SendMessage(theMessage);
+                messageBox.Text = "";
+            }
         }
     }
 }

@@ -34,6 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.btnColorPicker = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +46,7 @@
             this.tbUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUserName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUserName.Location = new System.Drawing.Point(35, 55);
+            this.tbUserName.MaxLength = 20;
             this.tbUserName.Multiline = true;
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(215, 20);
@@ -56,7 +59,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogin.Location = new System.Drawing.Point(95, 115);
+            this.btnLogin.Location = new System.Drawing.Point(95, 212);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(99, 30);
             this.btnLogin.TabIndex = 2;
@@ -66,13 +69,14 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnColorPicker);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.tbUserName);
-            this.panel1.Location = new System.Drawing.Point(2, 152);
+            this.panel1.Location = new System.Drawing.Point(1, 118);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 177);
+            this.panel1.Size = new System.Drawing.Size(300, 261);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -94,10 +98,29 @@
             this.panel2.Size = new System.Drawing.Size(215, 1);
             this.panel2.TabIndex = 4;
             // 
+            // colorDialog
+            // 
+            this.colorDialog.Color = System.Drawing.Color.Aquamarine;
+            // 
+            // btnColorPicker
+            // 
+            this.btnColorPicker.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnColorPicker.FlatAppearance.BorderSize = 0;
+            this.btnColorPicker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColorPicker.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnColorPicker.Location = new System.Drawing.Point(35, 102);
+            this.btnColorPicker.Name = "btnColorPicker";
+            this.btnColorPicker.Size = new System.Drawing.Size(215, 30);
+            this.btnColorPicker.TabIndex = 7;
+            this.btnColorPicker.Text = "Vaša boja";
+            this.btnColorPicker.UseVisualStyleBackColor = false;
+            this.btnColorPicker.Click += new System.EventHandler(this.btnColorPicker_Click);
+            // 
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Location = new System.Drawing.Point(96, 46);
+            this.panel3.Location = new System.Drawing.Point(96, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(100, 100);
             this.panel3.TabIndex = 4;
@@ -106,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 331);
+            this.ClientSize = new System.Drawing.Size(300, 391);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -128,5 +151,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnColorPicker;
+        private System.Windows.Forms.ColorDialog colorDialog;
     }
 }

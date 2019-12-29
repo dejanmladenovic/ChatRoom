@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.lblUserName = new System.Windows.Forms.Label();
-            this.chxBoxMuted = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.soundIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.soundIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUserName
@@ -38,42 +38,34 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUserName.Location = new System.Drawing.Point(48, 6);
+            this.lblUserName.Location = new System.Drawing.Point(38, 13);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(75, 21);
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "John Doe";
             // 
-            // chxBoxMuted
+            // soundIcon
             // 
-            this.chxBoxMuted.AutoSize = true;
-            this.chxBoxMuted.Location = new System.Drawing.Point(12, 10);
-            this.chxBoxMuted.Name = "chxBoxMuted";
-            this.chxBoxMuted.Size = new System.Drawing.Size(15, 14);
-            this.chxBoxMuted.TabIndex = 1;
-            this.chxBoxMuted.UseVisualStyleBackColor = true;
-            this.chxBoxMuted.CheckedChanged += new System.EventHandler(this.chxBoxMuted_CheckedChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "utisaj";
+            this.soundIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.soundIcon.Image = global::ChatAppForm.Properties.Resources.sound;
+            this.soundIcon.Location = new System.Drawing.Point(3, 11);
+            this.soundIcon.Name = "soundIcon";
+            this.soundIcon.Size = new System.Drawing.Size(25, 24);
+            this.soundIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.soundIcon.TabIndex = 2;
+            this.soundIcon.TabStop = false;
+            this.soundIcon.Click += new System.EventHandler(this.soundIcon_Click);
             // 
             // OnlineUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(43)))), ((int)(((byte)(71)))));
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.chxBoxMuted);
+            this.Controls.Add(this.soundIcon);
             this.Controls.Add(this.lblUserName);
             this.Name = "OnlineUser";
-            this.Size = new System.Drawing.Size(129, 33);
+            this.Size = new System.Drawing.Size(163, 47);
+            ((System.ComponentModel.ISupportInitialize)(this.soundIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,7 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.CheckBox chxBoxMuted;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox soundIcon;
     }
 }

@@ -37,9 +37,6 @@ namespace ChatRoom
             }
             this.chatChannel = "ChatChannel";
             this.pubsub = connection.GetSubscriber();
-            //this.chatForm = chatForm;
-            //chatForm.BindChatAPI(this);
-            //addUserNameInList();
             pubsub.Subscribe(chatChannel, (channel, message) => MessageAction(message));
             
         }
@@ -101,7 +98,7 @@ namespace ChatRoom
 
                 if (msg.UserName.Equals(this.userName))
                 {
-                    chatForm.DisplayMessage(new Message("ChatRoom", new Color(144, 144, 144, 0), this.userName + " uspesno ste se prikljucili cet sobi", ""));
+                    Message login_notification = new Message("ChatRoom", new Color(144, 144, 144, 0),"", "login_success");
                     List<string> lista = new List<string>();
                     foreach (var el in baza.ListRange(nameListUserName))
                     {
@@ -109,6 +106,9 @@ namespace ChatRoom
                             lista.Add(el.ToString());
                     }
                     chatForm.AddOnline(lista);
+
+                    Message join_notification = new Message(userName, new Color(144, 144, 144, 0), "", "user_join");
+                    SendMessage(join_notification);
                 }
                 else
                 {
@@ -129,7 +129,7 @@ namespace ChatRoom
                             lista.Add(el.ToString());
                     }
                     chatForm.AddOnline(lista);
-                    chatForm.DisplayMessage(new Message("Napustanje grupe :(", new Color(0,0,255,0), "Korisnik " + msg.UserName + " je napustio grupu", ""));
+                    chatForm.DisplayMessage(new Message("Napustanje grupe :(", new Color(0,0,255,0), "Korisnik " + msg.UserName + " je napustio grupu", "user_disconnected"));
                 }
             else if (!ExistsInTheList(listMutedUserName, msg.UserName))             //ako je korisnik koji je mutiran poslao poruku, ne trebamo je prikazati
                  chatForm.DisplayMessage(msg);
