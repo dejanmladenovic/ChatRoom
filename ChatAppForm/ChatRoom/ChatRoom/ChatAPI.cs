@@ -98,7 +98,6 @@ namespace ChatRoom
 
                 if (msg.UserName.Equals(this.userName))
                 {
-                    Message login_notification = new Message("ChatRoom", new Color(144, 144, 144, 0),"", "login_success");
                     List<string> lista = new List<string>();
                     foreach (var el in baza.ListRange(nameListUserName))
                     {
@@ -118,7 +117,7 @@ namespace ChatRoom
                 }
             }
 
-            else if (msg.Type.Equals("disconected"))
+            else if (msg.Type.Equals("disconnected"))
                 {
                     ListMutedUserName.Remove(msg.UserName);
                     chatForm.clearOnlineBox();
@@ -129,8 +128,8 @@ namespace ChatRoom
                             lista.Add(el.ToString());
                     }
                     chatForm.AddOnline(lista);
-                    chatForm.DisplayMessage(new Message("Napustanje grupe :(", new Color(0,0,255,0), "Korisnik " + msg.UserName + " je napustio grupu", "user_disconnected"));
-                }
+                    chatForm.DisplayMessage(msg);
+            }
             else if (!ExistsInTheList(listMutedUserName, msg.UserName))             //ako je korisnik koji je mutiran poslao poruku, ne trebamo je prikazati
                  chatForm.DisplayMessage(msg);
         }
@@ -181,7 +180,7 @@ namespace ChatRoom
 
         public void Disconected()                                 //poziva se prilikom napustanja cet sobe, salje poruku tipa disconected da bi se kod ostalih korisnika izbacio iz liste mutiranih, 
         {                                                          //ukoliko je kod nekog korisnika mutiran. Takodje brise svoje korisnicko ime iz liste ulogovanih korisnika
-            this.SendMessage(new Message(userName, new Color(255, 0, 0, 0), "", "disconected"));
+            this.SendMessage(new Message(userName, new Color(255, 0, 0, 0), "", "disconnected"));
             IDatabase baza = connection.GetDatabase();
             baza.ListRemove(nameListUserName, userName);
         }

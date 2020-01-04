@@ -60,6 +60,9 @@ namespace ChatAppForm
                     else
                         chatBox.addChatNotification("Korisnik " + msg.UserName + " se uspešno pridružio ćaskanju.");
                     break;
+                case "disconnected":
+                    chatBox.addChatNotification("Korisnik " + msg.UserName + " je napustio ćaskanje.");
+                    break;
             }
 
             

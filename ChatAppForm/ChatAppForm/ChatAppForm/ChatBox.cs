@@ -28,6 +28,7 @@ namespace ChatAppForm
             {
                 bubble.Anchor = (AnchorStyles.Top | AnchorStyles.Right);
                 bubble.Left = this.Width - bubble.Width - 5;
+                bubble.BackColor = System.Drawing.Color.DimGray;
             }
             else
             {

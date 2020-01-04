@@ -278,3 +278,31 @@ E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRo
 E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csproj.CopyComplete
 E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.dll
 E:\fax\IV godina\VII semestar\Napredne baze podataka\projekat 1 git jovan\ChatRoom\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.pdb
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\ChatRoom.dll.config
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\ChatRoom.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\ChatRoom.pdb
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Newtonsoft.Json.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\StackExchange.Redis.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Buffers.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.IO.Pipelines.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Memory.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Numerics.Vectors.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Channels.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Newtonsoft.Json.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\StackExchange.Redis.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Buffers.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.IO.Pipelines.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Memory.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Numerics.Vectors.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Channels.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csprojAssemblyReference.cache
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.csproj.CopyComplete
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.dll
+C:\Fax\Napredne Baze Podataka\Projekti\ChatApp\ChatAppForm\ChatRoom\ChatRoom\obj\Debug\ChatRoom.pdb
